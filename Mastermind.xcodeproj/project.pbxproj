@@ -14,6 +14,8 @@
 		EF81F61F27EE1DFA005FD524 /* MastermindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F61E27EE1DFA005FD524 /* MastermindTests.swift */; };
 		EF81F62927EE1DFA005FD524 /* MastermindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F62827EE1DFA005FD524 /* MastermindUITests.swift */; };
 		EF81F62B27EE1DFA005FD524 /* MastermindUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F62A27EE1DFA005FD524 /* MastermindUITestsLaunchTests.swift */; };
+		EF81F63827EE1FFC005FD524 /* MastermindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F63727EE1FFC005FD524 /* MastermindViewModel.swift */; };
+		EF81F63A27EE20BA005FD524 /* Combination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F63927EE20BA005FD524 /* Combination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		EF81F62427EE1DFA005FD524 /* MastermindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastermindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF81F62827EE1DFA005FD524 /* MastermindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindUITests.swift; sourceTree = "<group>"; };
 		EF81F62A27EE1DFA005FD524 /* MastermindUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF81F63727EE1FFC005FD524 /* MastermindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindViewModel.swift; sourceTree = "<group>"; };
+		EF81F63927EE20BA005FD524 /* Combination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				EF81F60D27EE1DF8005FD524 /* MastermindApp.swift */,
+				EF81F63727EE1FFC005FD524 /* MastermindViewModel.swift */,
+				EF81F63927EE20BA005FD524 /* Combination.swift */,
 				EF81F60F27EE1DF8005FD524 /* ContentView.swift */,
 				EF81F61127EE1DF9005FD524 /* Assets.xcassets */,
 				EF81F61327EE1DF9005FD524 /* Preview Content */,
@@ -259,6 +265,8 @@
 			files = (
 				EF81F61027EE1DF8005FD524 /* ContentView.swift in Sources */,
 				EF81F60E27EE1DF8005FD524 /* MastermindApp.swift in Sources */,
+				EF81F63827EE1FFC005FD524 /* MastermindViewModel.swift in Sources */,
+				EF81F63A27EE20BA005FD524 /* Combination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
