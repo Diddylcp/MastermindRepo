@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF81F60E27EE1DF8005FD524 /* MastermindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F60D27EE1DF8005FD524 /* MastermindApp.swift */; };
+		EF81F61027EE1DF8005FD524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F60F27EE1DF8005FD524 /* ContentView.swift */; };
+		EF81F61227EE1DF9005FD524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF81F61127EE1DF9005FD524 /* Assets.xcassets */; };
+		EF81F61527EE1DF9005FD524 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF81F61427EE1DF9005FD524 /* Preview Assets.xcassets */; };
+		EF81F61F27EE1DFA005FD524 /* MastermindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F61E27EE1DFA005FD524 /* MastermindTests.swift */; };
+		EF81F62927EE1DFA005FD524 /* MastermindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F62827EE1DFA005FD524 /* MastermindUITests.swift */; };
+		EF81F62B27EE1DFA005FD524 /* MastermindUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F62A27EE1DFA005FD524 /* MastermindUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF81F61B27EE1DFA005FD524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF81F60227EE1DF8005FD524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF81F60927EE1DF8005FD524;
+			remoteInfo = Mastermind;
+		};
+		EF81F62527EE1DFA005FD524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF81F60227EE1DF8005FD524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF81F60927EE1DF8005FD524;
+			remoteInfo = Mastermind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF81F60A27EE1DF8005FD524 /* Mastermind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastermind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF81F60D27EE1DF8005FD524 /* MastermindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindApp.swift; sourceTree = "<group>"; };
+		EF81F60F27EE1DF8005FD524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF81F61127EE1DF9005FD524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF81F61427EE1DF9005FD524 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF81F61A27EE1DFA005FD524 /* MastermindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastermindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF81F61E27EE1DFA005FD524 /* MastermindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindTests.swift; sourceTree = "<group>"; };
+		EF81F62427EE1DFA005FD524 /* MastermindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastermindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF81F62827EE1DFA005FD524 /* MastermindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindUITests.swift; sourceTree = "<group>"; };
+		EF81F62A27EE1DFA005FD524 /* MastermindUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF81F60727EE1DF8005FD524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF81F61727EE1DFA005FD524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF81F62127EE1DFA005FD524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF81F60127EE1DF8005FD524 = {
+			isa = PBXGroup;
+			children = (
+				EF81F60C27EE1DF8005FD524 /* Mastermind */,
+				EF81F61D27EE1DFA005FD524 /* MastermindTests */,
+				EF81F62727EE1DFA005FD524 /* MastermindUITests */,
+				EF81F60B27EE1DF8005FD524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF81F60B27EE1DF8005FD524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF81F60A27EE1DF8005FD524 /* Mastermind.app */,
+				EF81F61A27EE1DFA005FD524 /* MastermindTests.xctest */,
+				EF81F62427EE1DFA005FD524 /* MastermindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF81F60C27EE1DF8005FD524 /* Mastermind */ = {
+			isa = PBXGroup;
+			children = (
+				EF81F60D27EE1DF8005FD524 /* MastermindApp.swift */,
+				EF81F60F27EE1DF8005FD524 /* ContentView.swift */,
+				EF81F61127EE1DF9005FD524 /* Assets.xcassets */,
+				EF81F61327EE1DF9005FD524 /* Preview Content */,
+			);
+			path = Mastermind;
+			sourceTree = "<group>";
+		};
+		EF81F61327EE1DF9005FD524 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF81F61427EE1DF9005FD524 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF81F61D27EE1DFA005FD524 /* MastermindTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF81F61E27EE1DFA005FD524 /* MastermindTests.swift */,
+			);
+			path = MastermindTests;
+			sourceTree = "<group>";
+		};
+		EF81F62727EE1DFA005FD524 /* MastermindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF81F62827EE1DFA005FD524 /* MastermindUITests.swift */,
+				EF81F62A27EE1DFA005FD524 /* MastermindUITestsLaunchTests.swift */,
+			);
+			path = MastermindUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF81F60927EE1DF8005FD524 /* Mastermind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF81F62E27EE1DFA005FD524 /* Build configuration list for PBXNativeTarget "Mastermind" */;
+			buildPhases = (
+				EF81F60627EE1DF8005FD524 /* Sources */,
+				EF81F60727EE1DF8005FD524 /* Frameworks */,
+				EF81F60827EE1DF8005FD524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mastermind;
+			productName = Mastermind;
+			productReference = EF81F60A27EE1DF8005FD524 /* Mastermind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF81F61927EE1DFA005FD524 /* MastermindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF81F63127EE1DFA005FD524 /* Build configuration list for PBXNativeTarget "MastermindTests" */;
+			buildPhases = (
+				EF81F61627EE1DFA005FD524 /* Sources */,
+				EF81F61727EE1DFA005FD524 /* Frameworks */,
+				EF81F61827EE1DFA005FD524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF81F61C27EE1DFA005FD524 /* PBXTargetDependency */,
+			);
+			name = MastermindTests;
+			productName = MastermindTests;
+			productReference = EF81F61A27EE1DFA005FD524 /* MastermindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF81F62327EE1DFA005FD524 /* MastermindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF81F63427EE1DFA005FD524 /* Build configuration list for PBXNativeTarget "MastermindUITests" */;
+			buildPhases = (
+				EF81F62027EE1DFA005FD524 /* Sources */,
+				EF81F62127EE1DFA005FD524 /* Frameworks */,
+				EF81F62227EE1DFA005FD524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF81F62627EE1DFA005FD524 /* PBXTargetDependency */,
+			);
+			name = MastermindUITests;
+			productName = MastermindUITests;
+			productReference = EF81F62427EE1DFA005FD524 /* MastermindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF81F60227EE1DF8005FD524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					EF81F60927EE1DF8005FD524 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					EF81F61927EE1DFA005FD524 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = EF81F60927EE1DF8005FD524;
+					};
+					EF81F62327EE1DFA005FD524 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = EF81F60927EE1DF8005FD524;
+					};
+				};
+			};
+			buildConfigurationList = EF81F60527EE1DF8005FD524 /* Build configuration list for PBXProject "Mastermind" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF81F60127EE1DF8005FD524;
+			productRefGroup = EF81F60B27EE1DF8005FD524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF81F60927EE1DF8005FD524 /* Mastermind */,
+				EF81F61927EE1DFA005FD524 /* MastermindTests */,
+				EF81F62327EE1DFA005FD524 /* MastermindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF81F60827EE1DF8005FD524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF81F61527EE1DF9005FD524 /* Preview Assets.xcassets in Resources */,
+				EF81F61227EE1DF9005FD524 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF81F61827EE1DFA005FD524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF81F62227EE1DFA005FD524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF81F60627EE1DF8005FD524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF81F61027EE1DF8005FD524 /* ContentView.swift in Sources */,
+				EF81F60E27EE1DF8005FD524 /* MastermindApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF81F61627EE1DFA005FD524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF81F61F27EE1DFA005FD524 /* MastermindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF81F62027EE1DFA005FD524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF81F62B27EE1DFA005FD524 /* MastermindUITestsLaunchTests.swift in Sources */,
+				EF81F62927EE1DFA005FD524 /* MastermindUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF81F61C27EE1DFA005FD524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF81F60927EE1DF8005FD524 /* Mastermind */;
+			targetProxy = EF81F61B27EE1DFA005FD524 /* PBXContainerItemProxy */;
+		};
+		EF81F62627EE1DFA005FD524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF81F60927EE1DF8005FD524 /* Mastermind */;
+			targetProxy = EF81F62527EE1DFA005FD524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF81F62C27EE1DFA005FD524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF81F62D27EE1DFA005FD524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF81F62F27EE1DFA005FD524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mastermind/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borja.Mastermind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF81F63027EE1DFA005FD524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mastermind/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borja.Mastermind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF81F63227EE1DFA005FD524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borja.MastermindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mastermind.app/Mastermind";
+			};
+			name = Debug;
+		};
+		EF81F63327EE1DFA005FD524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borja.MastermindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mastermind.app/Mastermind";
+			};
+			name = Release;
+		};
+		EF81F63527EE1DFA005FD524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borja.MastermindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mastermind;
+			};
+			name = Debug;
+		};
+		EF81F63627EE1DFA005FD524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borja.MastermindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mastermind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF81F60527EE1DF8005FD524 /* Build configuration list for PBXProject "Mastermind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF81F62C27EE1DFA005FD524 /* Debug */,
+				EF81F62D27EE1DFA005FD524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF81F62E27EE1DFA005FD524 /* Build configuration list for PBXNativeTarget "Mastermind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF81F62F27EE1DFA005FD524 /* Debug */,
+				EF81F63027EE1DFA005FD524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF81F63127EE1DFA005FD524 /* Build configuration list for PBXNativeTarget "MastermindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF81F63227EE1DFA005FD524 /* Debug */,
+				EF81F63327EE1DFA005FD524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF81F63427EE1DFA005FD524 /* Build configuration list for PBXNativeTarget "MastermindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF81F63527EE1DFA005FD524 /* Debug */,
+				EF81F63627EE1DFA005FD524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF81F60227EE1DF8005FD524 /* Project object */;
+}
