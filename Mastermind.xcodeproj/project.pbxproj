@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF533B0527F7432D00B2B0F8 /* ResultDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF533B0427F7432D00B2B0F8 /* ResultDotView.swift */; };
+		EF533B0727F7472C00B2B0F8 /* ResultCombinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF533B0627F7472C00B2B0F8 /* ResultCombinationView.swift */; };
 		EF81F60E27EE1DF8005FD524 /* MastermindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F60D27EE1DF8005FD524 /* MastermindApp.swift */; };
 		EF81F61027EE1DF8005FD524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F60F27EE1DF8005FD524 /* ContentView.swift */; };
 		EF81F61227EE1DF9005FD524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF81F61127EE1DF9005FD524 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF533B0427F7432D00B2B0F8 /* ResultDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDotView.swift; sourceTree = "<group>"; };
+		EF533B0627F7472C00B2B0F8 /* ResultCombinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCombinationView.swift; sourceTree = "<group>"; };
 		EF81F60A27EE1DF8005FD524 /* Mastermind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastermind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF81F60D27EE1DF8005FD524 /* MastermindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindApp.swift; sourceTree = "<group>"; };
 		EF81F60F27EE1DF8005FD524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF533B0127F7415C00B2B0F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF81F60F27EE1DF8005FD524 /* ContentView.swift */,
+				EF533B0427F7432D00B2B0F8 /* ResultDotView.swift */,
+				EF533B0627F7472C00B2B0F8 /* ResultCombinationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF533B0227F7416600B2B0F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF81F63927EE20BA005FD524 /* Combination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF533B0327F7416E00B2B0F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF81F63727EE1FFC005FD524 /* MastermindViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		EF81F60127EE1DF8005FD524 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				EF81F60D27EE1DF8005FD524 /* MastermindApp.swift */,
-				EF81F63727EE1FFC005FD524 /* MastermindViewModel.swift */,
-				EF81F63927EE20BA005FD524 /* Combination.swift */,
-				EF81F60F27EE1DF8005FD524 /* ContentView.swift */,
+				EF533B0327F7416E00B2B0F8 /* ViewModels */,
+				EF533B0227F7416600B2B0F8 /* Models */,
+				EF533B0127F7415C00B2B0F8 /* Views */,
 				EF81F61127EE1DF9005FD524 /* Assets.xcassets */,
 				EF81F61327EE1DF9005FD524 /* Preview Content */,
 			);
@@ -266,6 +296,8 @@
 				EF81F61027EE1DF8005FD524 /* ContentView.swift in Sources */,
 				EF81F60E27EE1DF8005FD524 /* MastermindApp.swift in Sources */,
 				EF81F63827EE1FFC005FD524 /* MastermindViewModel.swift in Sources */,
+				EF533B0727F7472C00B2B0F8 /* ResultCombinationView.swift in Sources */,
+				EF533B0527F7432D00B2B0F8 /* ResultDotView.swift in Sources */,
 				EF81F63A27EE20BA005FD524 /* Combination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

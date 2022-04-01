@@ -38,8 +38,9 @@ class MastermindViewModel{
                         break
                     }
                 }
-                if(i > result.count)
+                if(i > result.count){
                     result.append(.wrong)
+                }
             }
         }
         

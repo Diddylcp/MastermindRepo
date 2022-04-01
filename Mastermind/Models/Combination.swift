@@ -13,7 +13,7 @@ class Combination{
     var result: [CombinationState]
     
     init(colors: [Color], result: [CombinationState]){
-        colorCombination = colors
+        self.colorCombination = colors
         self.result = result
     }
 }
