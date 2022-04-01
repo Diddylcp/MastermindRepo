@@ -32,13 +32,14 @@ class MastermindViewModel{
                 result.append(.correct)
             }
             else{
-                for j in 2...4{
-                    if secret[i] == secret[j]{
+                for j in 1...4{
+                    if secret[i] == combination[j]{
                         result.append(.notInPosition)
                         break
                     }
                 }
-                result.append(.wrong)
+                if(i > result.count)
+                    result.append(.wrong)
             }
         }
         
