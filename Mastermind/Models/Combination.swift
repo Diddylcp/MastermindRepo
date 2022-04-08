@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 class Combination{
+    let id = UUID()
     var colorCombination: [Color]
     var result: [CombinationState]
     

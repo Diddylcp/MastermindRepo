@@ -8,26 +8,37 @@
 import SwiftUI
 
 struct ResultCombinationView: View{
-    let combination =  [Color.gray, Color.red, Color.blue, Color.green]
-    let result = [Color.gray, Color.gray, Color.black, Color.white]
+    var combination =  [Color]()
+    var result = [CombinationState]()
+    
+    let rowsGrid = [
+        GridItem(.fixed(15)),
+        GridItem(.fixed(15))
+        ]
+    
+    init(_ combination: [Color], _ result: [CombinationState]){
+        self.combination = combination
+        self.result = result
+    }
+    
     var body: some View{
         HStack{
             ForEach(combination, id: \.self){ color in
                 ColorCircle(myColor: color)
             }
-            ForEach((1...2), id: \.self) {number in
-                VStack{
-                    ResultDotView(myColor: result[1])
-                    ResultDotView(myColor: result[2])
+            LazyHGrid(rows: rowsGrid, spacing: 10){
+                ForEach(result, id: \.self) {resultState in
+                    ResultDotView(myState: resultState)
                 }
             }
+            
         }
     }
 }
 
 struct ResultCombinationView_Previews: PreviewProvider{
     static var previews: some View{
-        ResultCombinationView()
+        ResultCombinationView([.gray, .gray, .gray, .gray], [.correct, .correct, .notInPosition, .wrong])
     }
 }
 

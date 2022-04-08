@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct PlayerGuessArea: View{
+    @State private var isExpanded = false
     
     var body: some View{
-        Circle()
-            .fill(myColor)
-            .frame(width:50, height:50)
+        HStack{
+            ColorGuess()
+            ColorGuess()
+            ColorGuess()
+            ColorGuess()
+            Button("Send"){
+            }
+            .buttonStyle(.bordered)
+        }
+        .frame( maxHeight: .infinity, alignment: .bottom)
+        .padding(10)
+        
     }
 }
 
-struct PlayerGuessArea: PreviewProvider{
+struct PlayerGuessArea_Previews: PreviewProvider{
     static var previews: some View{
         PlayerGuessArea()
     }
