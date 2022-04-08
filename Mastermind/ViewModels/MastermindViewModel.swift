@@ -78,6 +78,7 @@ class MastermindViewModel: ObservableObject{
         round = 0
         isGameFinished = false
         board.removeAll()
+        ResetPlayerGuesses()
     }
 
     func ResetPlayerGuesses(){
