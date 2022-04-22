@@ -15,6 +15,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
+            if(viewModel.isGameFinished){
+                EndView(viewModel: viewModel)
+            }
             ScrollView{
                 // Here comes foreach
                 ForEach(viewModel.board, id:\.id){ guess in
@@ -24,7 +27,7 @@ struct ContentView: View {
                 .padding()  
             }
             // User selection
-            PlayerGuessArea()
+            PlayerGuessArea(viewModel: viewModel)
         }
     }
 }

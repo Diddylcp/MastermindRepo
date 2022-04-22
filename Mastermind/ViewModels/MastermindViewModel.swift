@@ -13,6 +13,10 @@ class MastermindViewModel: ObservableObject{
     @Published var totalTries: Int = 0 // How many tries player has used
     @Published var board = [Combination]() // Tries information
     @Published var playerGuessCombination = [Color]()
+
+    var flagMachineUsed = [false, false, false, false]
+    public var colorGuessIndex = [0,0,0,0]
+    public var playerHasWon: Bool = false
     
     private var secretCombination = [Color]() // Color combination player needs to guess
     
@@ -38,31 +42,41 @@ class MastermindViewModel: ObservableObject{
         // Checks wether combination is correct or not and stores it in result
         /// There's an error, we need to keep track of the colorCombinations that are used to not repeat results
         /// (if there's 1 red in combination, it will show to the player to all its reds that are not in position insted of showing only in one)
+        flagMachineUsed = [false, false, false, false]
         var result = [CombinationState]()
-        for i in 1...4{
+        for i in 0...3{
             if playerGuessCombination[i] == combination[i]{
                 result.append(.correct)
-            }
-            else{
-                for j in 1...4{
-                    if (playerGuessCombination[i] == combination[j] && playerGuessCombination[j] != combination[j]){
-                        result.append(.notInPosition)
-                        break
-                    }
-                }
-                if(result.count < i){
-                    result.append(.wrong)
-                }
+                flagMachineUsed[i] == true
             }
         }
-        /*
+        for i in 0...3{
+            for j in 0...3{
+                if (playerGuessCombination[i] == combination[j] && flagMachineUsed[j] == false){
+                    flagMachineUsed[j] = true
+                    result.append(.notInPosition)
+                    break
+                }
+            }
+            if(result.count == i){
+                result.append(.wrong)
+            }
+        }
+        
+        isGameFinished = true
         for i in 1...4{
-            if(result[i] != CombinationState.correct)
+            if(result[i] != CombinationState.correct){
+                isGameFinished = false
+            }
+        }
+        if(isGameFinished){
+            playerHasWon = true
         }
 
-        if(totalTries < 10)
+        if(totalTries < 10){
             isGameFinished = true
-        */
+        }
+
         return Combination(colors: combination,
                            result: result)
     }
@@ -73,18 +87,22 @@ class MastermindViewModel: ObservableObject{
             totalTries += 1
             ResetPlayerGuesses()
         }
+        
     }
 
     public func PlayButtonPressed(){
         GenerateSecretCombination()
         totalTries = 0
         isGameFinished = false
+        playerHasWon = false
         board.removeAll()
+        flagMachineUsed = [false, false, false, false]
         ResetPlayerGuesses()
     }
 
     func ResetPlayerGuesses(){
         playerGuessCombination.removeAll()
+        colorGuessIndex = [0,0,0,0]
     }
 
 

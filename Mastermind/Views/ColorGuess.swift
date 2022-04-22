@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ColorGuess: View{
-    @State var colorSelected = 0
+    @Binding var colorSelectedIndex: Int
     
     var body: some View{
         Button{

@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct MastermindApp: App {
+    @ObservedObject viewModel = MastermindViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel)
         }
     }
 }

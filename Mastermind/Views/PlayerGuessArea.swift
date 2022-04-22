@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct PlayerGuessArea: View{
-    @State private var isExpanded = false
+    @ObservedObject viewModel: MastermindViewModel
     
     var body: some View{
         HStack{
-            ColorGuess()
-            ColorGuess()
-            ColorGuess()
-            ColorGuess()
-            Button("Send"){
+            ColorGuess(colorSelectedIndex: viewModel.colorGuessIndex[0])
+            ColorGuess(viewModel.colorGuessIndex[0])
+            ColorGuess(viewModel.colorGuessIndex[0])
+            ColorGuess(viewModel.colorGuessIndex[0])
+            Button(action: GuessButtonPressed){
+                Text("Send")
             }
             .buttonStyle(.bordered)
         }
