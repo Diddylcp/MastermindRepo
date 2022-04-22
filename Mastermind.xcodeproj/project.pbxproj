@@ -11,6 +11,8 @@
 		EF533B0527F7432D00B2B0F8 /* ResultDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF533B0427F7432D00B2B0F8 /* ResultDotView.swift */; };
 		EF533B0727F7472C00B2B0F8 /* ResultCombinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF533B0627F7472C00B2B0F8 /* ResultCombinationView.swift */; };
 		EF6213D428008659001B8C80 /* PlayerGuessArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6213D328008659001B8C80 /* PlayerGuessArea.swift */; };
+		EF7D2B6B2812EBC8003A15A2 /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D2B692812EBC7003A15A2 /* PlayButtonView.swift */; };
+		EF7D2B6C2812EBC8003A15A2 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D2B6A2812EBC8003A15A2 /* EndView.swift */; };
 		EF81F60E27EE1DF8005FD524 /* MastermindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F60D27EE1DF8005FD524 /* MastermindApp.swift */; };
 		EF81F61027EE1DF8005FD524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81F60F27EE1DF8005FD524 /* ContentView.swift */; };
 		EF81F61227EE1DF9005FD524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF81F61127EE1DF9005FD524 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		EF533B0427F7432D00B2B0F8 /* ResultDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDotView.swift; sourceTree = "<group>"; };
 		EF533B0627F7472C00B2B0F8 /* ResultCombinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCombinationView.swift; sourceTree = "<group>"; };
 		EF6213D328008659001B8C80 /* PlayerGuessArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerGuessArea.swift; sourceTree = "<group>"; };
+		EF7D2B692812EBC7003A15A2 /* PlayButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButtonView.swift; sourceTree = "<group>"; };
+		EF7D2B6A2812EBC8003A15A2 /* EndView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		EF81F60A27EE1DF8005FD524 /* Mastermind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastermind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF81F60D27EE1DF8005FD524 /* MastermindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindApp.swift; sourceTree = "<group>"; };
 		EF81F60F27EE1DF8005FD524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				EF533B0627F7472C00B2B0F8 /* ResultCombinationView.swift */,
 				EF6213D328008659001B8C80 /* PlayerGuessArea.swift */,
 				EF2C0C6628008B9F0074EE5F /* ColorGuess.swift */,
+				EF7D2B6A2812EBC8003A15A2 /* EndView.swift */,
+				EF7D2B692812EBC7003A15A2 /* PlayButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,12 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7D2B6C2812EBC8003A15A2 /* EndView.swift in Sources */,
 				EF6213D428008659001B8C80 /* PlayerGuessArea.swift in Sources */,
 				EF2C0C6728008B9F0074EE5F /* ColorGuess.swift in Sources */,
 				EF81F61027EE1DF8005FD524 /* ContentView.swift in Sources */,
 				EF81F60E27EE1DF8005FD524 /* MastermindApp.swift in Sources */,
 				EF81F63827EE1FFC005FD524 /* MastermindViewModel.swift in Sources */,
 				EF533B0727F7472C00B2B0F8 /* ResultCombinationView.swift in Sources */,
+				EF7D2B6B2812EBC8003A15A2 /* PlayButtonView.swift in Sources */,
 				EF533B0527F7432D00B2B0F8 /* ResultDotView.swift in Sources */,
 				EF81F63A27EE20BA005FD524 /* Combination.swift in Sources */,
 			);

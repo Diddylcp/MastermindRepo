@@ -10,13 +10,14 @@ import SwiftUI
 
 class MastermindViewModel: ObservableObject{
     @Published var isGameFinished: Bool = false // Flag Game End
+    @Published var isGameStarted: Bool = false 
     @Published var totalTries: Int = 0 // How many tries player has used
     @Published var board = [Combination]() // Tries information
     @Published var playerGuessCombination = [Color]()
-
+    @State var colorGuessIndex = [0,0,0,0]
+    @State var playerHasWon: Bool = false
     var flagMachineUsed = [false, false, false, false]
-    public var colorGuessIndex = [0,0,0,0]
-    public var playerHasWon: Bool = false
+    
     
     private var secretCombination = [Color]() // Color combination player needs to guess
     
@@ -47,7 +48,7 @@ class MastermindViewModel: ObservableObject{
         for i in 0...3{
             if playerGuessCombination[i] == combination[i]{
                 result.append(.correct)
-                flagMachineUsed[i] == true
+                flagMachineUsed[i] = true
             }
         }
         for i in 0...3{
@@ -93,9 +94,11 @@ class MastermindViewModel: ObservableObject{
     public func PlayButtonPressed(){
         GenerateSecretCombination()
         totalTries = 0
+        board.append(CheckPlayersCombination(combination: playerGuessCombination))
         isGameFinished = false
+        isGameStarted = true
         playerHasWon = false
-        board.removeAll()
+        //board.removeAll()
         flagMachineUsed = [false, false, false, false]
         ResetPlayerGuesses()
     }

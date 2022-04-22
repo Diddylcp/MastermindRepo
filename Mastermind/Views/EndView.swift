@@ -6,7 +6,7 @@ struct EndView: View {
     @ObservedObject var viewModel: MastermindViewModel
     var body: some View {
         VStack{
-            if(viewModel.hasWon){
+            if(viewModel.playerHasWon){
                 Color.green
                     .ignoresSafeArea()
                 Text("YOU WON!!")
@@ -14,15 +14,18 @@ struct EndView: View {
             else{
                 Color.orange
                     .ignoresSafeArea()
-                TEXT("Nice Try")
+                Text("Nice Try")
+                    .background(.orange)
             }
             NavigationLink("Play New Game", destination: ContentView(viewModel: viewModel))
+                .frame(alignment: .center)
         }
+        .frame(alignment: .center)
     }
 }
 
 struct EndView_Previews: PreviewProvider {
     static var previews: some View {
-        EndView()
+        EndView(viewModel: MastermindViewModel())
     }
 }

@@ -13,21 +13,34 @@ struct ContentView: View {
     let game = [ResultCombinationView]()
     @ObservedObject var viewModel = MastermindViewModel()
     
+    
+    
     var body: some View {
         VStack{
             if(viewModel.isGameFinished){
                 EndView(viewModel: viewModel)
             }
-            ScrollView{
-                // Here comes foreach
-                ForEach(viewModel.board, id:\.id){ guess in
-                    ResultCombinationView(guess.colorCombination, guess.result)
+            //else if(!viewModel.isGameStarted){
+            //    PlayButtonView()
+            //}
+            else{
+                ScrollView{
+                    // Here comes foreach
+                    ForEach(viewModel.board, id:\.id){ guess in
+                        ResultCombinationView(guess.colorCombination, guess.result)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()  
+                // User selection
+                PlayerGuessArea(viewModel: viewModel)
+                Button(action: viewModel.PlayButtonPressed){
+                    Text("Play New Game")
+                }
+                .buttonStyle(.bordered)
+                .foregroundColor(.white)
+                .background(.gray)
             }
-            // User selection
-            PlayerGuessArea(viewModel: viewModel)
         }
     }
 }

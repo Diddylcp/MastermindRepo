@@ -3,9 +3,15 @@
 import SwiftUI
 
 struct PlayButtonView: View {
-    @ObservedObject var viewModel: MastermindViewModel
+    @ObservedObject var viewModel = MastermindViewModel()
     var body: some View {
-        NavigationLink("Play New Game", destination: ContentView(viewModel: viewModel))
+        Button(action: viewModel.PlayButtonPressed){
+            Text("Play New Game")
+        }
+        .buttonStyle(.bordered)
+        .foregroundColor(.white)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.gray)
     }
 }
 

@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct PlayerGuessArea: View{
-    @ObservedObject viewModel: MastermindViewModel
+    @ObservedObject var viewModel: MastermindViewModel
     
     var body: some View{
         HStack{
-            ColorGuess(colorSelectedIndex: viewModel.colorGuessIndex[0])
-            ColorGuess(viewModel.colorGuessIndex[0])
-            ColorGuess(viewModel.colorGuessIndex[0])
-            ColorGuess(viewModel.colorGuessIndex[0])
-            Button(action: GuessButtonPressed){
+            ColorGuess(colorSelectedIndex: $viewModel.colorGuessIndex[0])
+            ColorGuess(colorSelectedIndex: $viewModel.colorGuessIndex[1])
+            ColorGuess(colorSelectedIndex: $viewModel.colorGuessIndex[2])
+            ColorGuess(colorSelectedIndex: $viewModel.colorGuessIndex[3])
+            Button(action: viewModel.GuessButtonPressed){
                 Text("Send")
             }
             .buttonStyle(.bordered)
@@ -29,6 +29,6 @@ struct PlayerGuessArea: View{
 
 struct PlayerGuessArea_Previews: PreviewProvider{
     static var previews: some View{
-        PlayerGuessArea()
+        PlayerGuessArea(viewModel: MastermindViewModel())
     }
 }

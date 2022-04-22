@@ -13,13 +13,13 @@ struct ColorGuess: View{
     var body: some View{
         Button{
             print("working")
-            colorSelected += 1
-            colorSelected %= 4
+            colorSelectedIndex += 1
+            colorSelectedIndex %= 4
             
             
         } label:{
             Circle()
-            .fill(GetColor(colorSelected))
+            .fill(GetColor(colorSelectedIndex))
             .frame(width:50, height:50)
         }
         
@@ -43,8 +43,10 @@ struct ColorGuess: View{
     }
 }
 
+
 struct ColorGuess_Previews: PreviewProvider{
+    @State var myInt = 0
     static var previews: some View{
-        ColorGuess()
+        ColorGuess(colorSelectedIndex: .constant(0))
     }
 }
